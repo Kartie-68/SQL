@@ -1,0 +1,32 @@
+Show all columns from the table "address" 
+SELECT *
+FROM address
+Show columns "address"&"district" from the table "address"
+SELECT address,district
+FROM address
+challenge 1: list of all customers with 1st name, last name and email
+SELECT first_name,last_name,email
+FROM customer
+ORDER + ASC/DESC
+SELECT *
+FROM payment
+ORDER BY customer_id, amount DESC
+Challenge 2
+SELECT first_name, last_name, email
+FROM customer
+ORDER BY last_name DESC, first_name DESC
+SELECT DISTINCT
+SELECT DISTINCT rating, rental_duration
+FROM film
+Challenge 3
+SELECT DISTINCT amount
+FROM payment
+ORDER BY amount DESC
+LIMIT
+SELECT * FROM rental
+ORDER BY rental_date DESC
+LIMIT 10
+COUNT
+count number of rows of first name without duplicates
+SELECT COUNT (DISTINCT first_name)
+FROM customer
